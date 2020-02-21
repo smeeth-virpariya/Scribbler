@@ -6,3 +6,19 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.posts {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts-buttons {
+    margin: 10px 20px 0px 0px;
+    width: 120px;
+    height: 30px;
+    color: black;
+    background-color: rgb(214, 194, 10);
+    font-size: 15px;
+}
