@@ -96,3 +96,18 @@ body {
     size: 10px;
     cursor: pointer;
 }
+
+.buttons-delete-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.yes-modal-buttons {
+    width: 100px;
+}
+
+.no-modal-buttons {
+    width: 100px;
+    background-color: red;
+}
