@@ -7,12 +7,15 @@
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!--Styles-->
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
+    <!--Title and Sign up Sign In buttons-->
     <header>
         <div>
             <a class="website-title">ScriBBler</a>
@@ -22,7 +25,29 @@
             <button id="header-button-sign-up" class="header-buttons">Sign Up</button>
             <button id="header-button-sign-in" class="header-buttons">Sign In</button>
         </div>
+
+        <div id="sign-up-modal" class="modal">
+            <div class="modal-content">
+                <h2 class="modal-header">Get Started <i id="signup-modal-close-button" class="fa fa-times" aria-hidden="true"></i></h2>
+                <hr>
+                <form>
+                    <label>Name</label>
+                    <input class="modal-input" name="name" type="text" placeholder="Enter your name" required autofocus />
+                    <label>Username</label>
+                    <input class="modal-input" name="username" type="text" placeholder="Enter your name" required autofocus />
+                    <label>Password</label>
+                    <input class="modal-input" name="username" type="password" placeholder="Enter your password" required autofocus />
+                    <label>Confirm Password</label>
+                    <input class="modal-input" name="username" type="password" placeholder="Re-enter your password" required autofocus />
+                    <button id="modal-button-signup" class="modal-buttons" name="Sign Up">Sign Up</button>
+                </form>
+            </div>
+        </div>
     </header>
+
+    <!--Scripts-->
+    <script src="./scripts/index.js">
+    </script>
 </body>
 
 </html>
