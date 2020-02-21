@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-title {
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+    color: blue;
+}
+
+.subheading {
+    margin: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.header-buttons {
+    margin: 10px 10px 0px 0px;
+    padding: 2px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+}
