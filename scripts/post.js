@@ -2,6 +2,8 @@ var likeCount = 0;
 
 var isSave = false;
 
+load();
+
 function likeClicked() {
     likeCount++;
     var like_button_text = document.getElementById('like-button-text');
@@ -50,4 +52,20 @@ function toggleContentEditable() {
         post_desc.setAttribute('contenteditable', true);
         title.setAttribute('contenteditable', true);
     }
+}
+
+
+function load() {
+    var authorName = sessionStorage.getItem("postAuthorName");
+    var title = sessionStorage.getItem("postTitle");
+    var content = sessionStorage.getItem("postContent");
+
+    var post_author = document.getElementById('author');
+    post_author.innerHTML = authorName;
+
+    var post_title = document.getElementById('post-title-id');
+    post_title.innerHTML = title;
+
+    var post_desc = document.getElementById('post-desc');
+    post_desc.innerHTML = content;
 }
