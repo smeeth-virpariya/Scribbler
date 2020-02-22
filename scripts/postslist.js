@@ -25,3 +25,12 @@ no_modal_button.onclick = function() {
 function toggleDeleteModal() {
     delete_post_modal.classList.toggle("show-modal");
 }
+
+function openPost(author, title, content) {
+    console.log('Author ' + author);
+    sessionStorage.setItem('postAuthorName', author.innerHTML);
+    sessionStorage.setItem('postTitle', title.innerHTML);
+    sessionStorage.setItem('postContent', content.innerHTML);
+    var url = "../html/post.html?heading";
+    window.location.href = url;
+}
