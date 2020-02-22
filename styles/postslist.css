@@ -57,12 +57,15 @@ body {
 }
 
 .post-title {
+    overflow: hidden;
+    white-space: normal;
     color: grey;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: left;
+    height: 42px;
 }
 
 .fa-trash {
@@ -75,10 +78,10 @@ body {
 }
 
 .eclipse-icon {
-    margin-left: 92%;
+    overflow: hidden;
+    margin-left: 93%;
     color: grey;
     cursor: pointer;
-    padding-right: 120px;
     margin-bottom: 4px;
 }
 
@@ -100,7 +103,7 @@ body {
 .buttons-delete-post {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .yes-modal-buttons {

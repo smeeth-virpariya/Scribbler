@@ -38,3 +38,8 @@ body {
 .modal-create-post {
     width: 44rem;
 }
+
+.create-button {
+    width: 200px;
+    margin-left: 35%;
+}
