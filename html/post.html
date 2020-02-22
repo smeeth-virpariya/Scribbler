@@ -62,6 +62,25 @@
 
     </header>
 
+    <div class="post">
+        <h3 id="post-title-id" class="post-title" contenteditable='false'></h3>
+        <div class="post-author">
+            <h4 id="author" class="author-name"></h4>
+            <button id="edit-save-button" class="button edit-button">Edit <i class="fa fa-edit fa-lg"
+                    aria-hidden="true"></i></button>
+        </div>
+        <p id='post-desc' class="post-description" contenteditable='false'></p>
+        <button id="like-button" class=button onclick="likeClicked()"><i class="fa fa-thumbs-up fa-lg"
+                aria-hidden="true"></i> Like</button>
+        <p id="like-button-text" class="like-text">Be the first one to like this</p>
+        <div class="comment-area">
+            <textarea id="comment" class="comment-text-area" placeholder="Leave a comment..." value=""></textarea>
+            <button id="comment-button" class="button">Comment</button>
+            <h4>All Comments</h4>
+            <div id="comments" class="all-comments">
+            </div>
+        </div>
+    </div>
 
     <!--Scripts-->
     <script src="../scripts/common.js">
